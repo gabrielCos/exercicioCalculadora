@@ -1,0 +1,1 @@
+Uma calculadora experimental com várias funções para treinar o básico do Java Script

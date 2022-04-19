@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="styleC.css"/>
+    
+</head>
+<body>
+<div id="interface">
+    <!--Usando um paragrafo como painel da calculadora-->
+    <p id="painel"></p>
+    <!--Usando tabelas para fazer os botões-->
+    <!--Usando a função inserir e passando o número conrrespondente como parâmetro-->
+    <table>
+        <tr> 
+            <td><button class="botao" onclick="inserir('7')">7</button></td>
+            <td><button class="botao" onclick="inserir('8')">8</button></td>
+            <td><button class="botao" onclick="inserir('9')">9</button></td>
+            <td><button class="botao" onclick="calcular('+')"> + </button></td>
+        </tr>
+        <tr> 
+            <td><button class="botao" onclick="inserir('4')">4</button></td>
+            <td><button class="botao" onclick="inserir('5')">5</button></td>
+            <td><button class="botao" onclick="inserir('6')">6</button></td>
+            <td><button class="botao" onclick="calcular('-')">-</button></td>
+        </tr>
+        <tr> 
+            <td><button class="botao" onclick="inserir('3')">3</button></td>
+            <td><button class="botao" onclick="inserir('2')">2</button></td>
+            <td><button class="botao" onclick="inserir('1')">1</button></td>
+            <td><button class="botao" onclick="calcular('*')">*</button></td>
+        </tr>
+        <tr> 
+            <td colspan="2"><button id="zero" class="botao" onclick="inserir('0')">0</button></td>
+            <td><button class="botao" onclick="mostraResultado()">=</button></td>
+            <td><button class="botao" onclick="calcular('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button id="clean" class="botao" onclick="clean()">C</button></td>
+            <td><button id="back" class="botao" onclick="back()"> < </button></td>
+        </tr>
+    </table>
+    </table>
+    
+</div>
+<script src="testeC.js"></script>
+</body>bu
+</html>
